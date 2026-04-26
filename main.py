@@ -12,7 +12,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 app = FastAPI()
-
 origins = [
     "https://lab-protocol-generator.vercel.app",  # ⬅️ Your live Vercel frontend
                                                  # (Standard Vite port, just in case)
