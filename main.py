@@ -22,12 +22,14 @@ origins = [
     "https://lab-protocol-generator.vercel.app","http:://localhost:8080"
 ]
 
+# --- HACKATHON CORS SETUP ---
+# By setting origins to "*" and credentials to False, we completely bypass all CORS blocking.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],     # Allow all URLs
+    allow_credentials=False, # This MUST be False when origins is "*"
+    allow_methods=["*"],     # Allow POST, GET, OPTIONS, etc.
+    allow_headers=["*"],     # Allow all headers
 )
 
 
