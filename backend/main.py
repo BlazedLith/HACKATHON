@@ -5,8 +5,8 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from models import ExperimentPlan, FeedbackSubmission, HypothesisRequest, LiteratureQC
-from services import (
+from backend.models import ExperimentPlan, FeedbackSubmission, HypothesisRequest, LiteratureQC
+from backend.services import (
     coerce_experiment_plan_payload,
     dummy_experiment_plan,
     dummy_literature_qc,
