@@ -11,7 +11,7 @@ export const Header = () => {
             </div>
           </div>
           <div className="leading-tight">
-            <div className="font-semibold tracking-tight text-foreground">Fulcrum LabGen</div>
+            <div className="font-semibold tracking-tight text-foreground">Curie Engine</div>
             <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
               Powered by Fulcrum Science
             </div>

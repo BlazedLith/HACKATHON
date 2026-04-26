@@ -70,7 +70,7 @@ const Index = () => {
   };
 
   useEffect(() => {
-    document.title = "Fulcrum LabGen — From Hypothesis to Runnable Experiment";
+    document.title = "Curie Engine";
   }, []);
 
   // Pre-warm the backend Render instance ("caffeine drip")
